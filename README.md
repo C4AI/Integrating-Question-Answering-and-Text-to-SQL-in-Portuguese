@@ -2,7 +2,9 @@
 
 Repository for the PROPOR'21 paper "Integrating Question Answering and Text-to-SQL in Portuguese"
 
-For more information please check the paper here: https://arxiv.org/abs/2202.04048
+For more information please check the paper here: https://link.springer.com/chapter/10.1007/978-3-030-98305-5_26
+
+There is also a version in arXiv: https://arxiv.org/abs/2202.04048
 
 ## Abstract
 
@@ -31,15 +33,29 @@ MIMICSQL Dataset: https://github.com/wangpinggl/TREQS
 
 ### Dataset preparation
 
-In the *Datasets_Integration* folder, it is possible to find two folders that was used to integrate the datasets.
+In the *Datasets_Integration* folder, it is possible to find two files that were used to integrate the datasets.
 
 ## Classifier
 
-## BM25+PTT5
+## Factual Question Answering System – BM25+PTT5
 
-## Text-SQL 
+We utilized a Retriever-Reader model based on the work of Cacao et al. For more information check their work: https://github.com/C4AI/deepage
+
+The implementation codes can be found in the BM25-PTT5 folder.
+
+The system works using BM25 as the retriever and the file Prepare_Elastic.ipynb is used to upload the corpus in the elastic search 
+
+
+
+## Text-to-SQL System - mRAT-SQL
+
+We utilized the mRAT_SQL model that can be found here: https://github.com/C4AI/gap-text2sql
 
 ## Integration
+
+## Acknowledgments
+
+This work was partly supported by  Ita\'{u} Unibanco S.A.  through the \textit{Programa de Bolsas Ita\'{u}} (PBI) of the \textit{Centro de Ciência de Dados} da Universidade de São Paulo (C$^2$D-USP); by the Center for Artificial Intelligence (C4AI) through support from the S\~ao Paulo Research Foundation (FAPESP grant \#2019/07665-4) and from the IBM Corporation; by CNPq grants no. 312180/2018-7 and 304012/2019-0, and CAPES Finance Code 001.  
 
 ## Cite this work
 
