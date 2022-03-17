@@ -6,6 +6,8 @@ For more information please check the paper here: https://link.springer.com/chap
 
 There is also a version in arXiv: https://arxiv.org/abs/2202.04048
 
+![Alt text]Architecture.png?raw=true "Architecture")
+
 ## Abstract
 
 Deep learning transformers have drastically improved systems that automatically answer questions in natural language. However, different questions demand different answering techniques; here we propose, build and validate an architecture that integrates different modules to answer two distinct kinds of queries. Our architecture takes a free-form natural language text and classifies it to send it either to a Neural Question Answering Reasoner or a Natural Language parser to SQL. We implemented a complete system for the Portuguese language, using some of the main tools available for the language and translating training and testing datasets. Experiments show that our system selects the appropriate answering method with high accuracy (over 99%), thus validating a modular question answering strategy.
@@ -37,11 +39,13 @@ In the *Datasets_Integration* folder, it is possible to find two files that were
 
 ## Classifier
 
+Two different text classifiers were teste: Naive Bayes and BERTimbau. Both were trained using cross-validation and the files can be found in the Classifier folder.
+
 ## Factual Question Answering System – BM25+PTT5
 
 We utilized a Retriever-Reader model based on the work of Cacao et al. For more information check their work: https://github.com/C4AI/deepage
 
-The implementation of training codes can be found in the BM25-PTT5 folder.
+The implementation of training codes can be found in the BM25-PTT5 folder. 
 
 The system works using BM25 as the retriever and the file *Prepare_Elastic.ipynb* is used to upload the corpus in the elastic search. To prepare the questions for training PTT5, it is necessary to run *Prepare_Questions.ipynb* file.
 
