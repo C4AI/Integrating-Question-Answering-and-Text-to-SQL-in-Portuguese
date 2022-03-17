@@ -41,21 +41,26 @@ In the *Datasets_Integration* folder, it is possible to find two files that were
 
 We utilized a Retriever-Reader model based on the work of Cacao et al. For more information check their work: https://github.com/C4AI/deepage
 
-The implementation codes can be found in the BM25-PTT5 folder.
+The implementation of training codes can be found in the BM25-PTT5 folder.
 
-The system works using BM25 as the retriever and the file Prepare_Elastic.ipynb is used to upload the corpus in the elastic search 
+The system works using BM25 as the retriever and the file *Prepare_Elastic.ipynb* is used to upload the corpus in the elastic search. To prepare the questions for training PTT5, it is necessary to run *Prepare_Questions.ipynb* file.
 
+To train PTT5, use the Train_T5.ipynb.
 
 
 ## Text-to-SQL System - mRAT-SQL
 
 We utilized the mRAT_SQL model that can be found here: https://github.com/C4AI/gap-text2sql
 
-## Integration
+## Integration and to run the system
+
+A significant challenge is integrating these systems; each one has specific libraries, requirements and heavy computational demands. We developed a cross-platform communication scheme through the file system using a shared mount point to send and receive the questions and answers in different machines independent of their operating systems.
+
+The files to run our architecture is in the *Integration* folder. It is necessary to run all four files at the same time, and ask the question the *classifier_integration.ipynb*
 
 ## Acknowledgments
 
-This work was partly supported by  Ita\'{u} Unibanco S.A.  through the \textit{Programa de Bolsas Ita\'{u}} (PBI) of the \textit{Centro de Ciência de Dados} da Universidade de São Paulo (C$^2$D-USP); by the Center for Artificial Intelligence (C4AI) through support from the S\~ao Paulo Research Foundation (FAPESP grant \#2019/07665-4) and from the IBM Corporation; by CNPq grants no. 312180/2018-7 and 304012/2019-0, and CAPES Finance Code 001.  
+This work was partly supported by  Itaú Unibanco S.A.  through the *Programa de Bolsas Itaú* (PBI) of the *Centro de Ciência de Dados* da Universidade de São Paulo (C2D-USP); by the Center for Artificial Intelligence (C4AI) through support from the S\~ao Paulo Research Foundation (FAPESP grant \#2019/07665-4) and from the IBM Corporation; by CNPq grants no. 312180/2018-7 and 304012/2019-0, and CAPES Finance Code 001.  
 
 ## Cite this work
 
