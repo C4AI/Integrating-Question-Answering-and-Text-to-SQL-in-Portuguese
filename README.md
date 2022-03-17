@@ -6,7 +6,7 @@ For more information please check the paper here: https://link.springer.com/chap
 
 There is also a version in arXiv: https://arxiv.org/abs/2202.04048
 
-![Alt text]Architecture.png?raw=true "Architecture")
+![Architecture](https://user-images.githubusercontent.com/50809930/158907289-ed0e3da7-03e6-421d-a85a-7b4a92d196c5.png)
 
 ## Abstract
 
