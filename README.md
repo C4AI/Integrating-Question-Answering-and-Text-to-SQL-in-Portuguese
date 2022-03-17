@@ -45,7 +45,7 @@ The implementation of training codes can be found in the BM25-PTT5 folder.
 
 The system works using BM25 as the retriever and the file *Prepare_Elastic.ipynb* is used to upload the corpus in the elastic search. To prepare the questions for training PTT5, it is necessary to run *Prepare_Questions.ipynb* file.
 
-To train PTT5, use the Train_T5.ipynb.
+To train PTT5, use the Train_PTT5.ipynb.
 
 
 ## Text-to-SQL System - mRAT-SQL
@@ -56,7 +56,7 @@ We utilized the mRAT_SQL model that can be found here: https://github.com/C4AI/g
 
 A significant challenge is integrating these systems; each one has specific libraries, requirements and heavy computational demands. We developed a cross-platform communication scheme through the file system using a shared mount point to send and receive the questions and answers in different machines independent of their operating systems.
 
-The files to run our architecture is in the *Integration* folder. It is necessary to run all four files at the same time, and ask the question the *classifier_integration.ipynb*
+The files to run our architecture is in the *Final_System* folder. It is necessary to run all four files at the same time, and ask the question in the *classifier_integration.ipynb* file.
 
 ## Acknowledgments
 
